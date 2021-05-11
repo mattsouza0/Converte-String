@@ -27,7 +27,7 @@ void MainWindow::on_pushButtonConv_clicked()
         string nome = rec.toStdString();
         int aux;
         char *name = new char[nome.length()+1];
-        memcpy(name, nome.c_str(),nome.length()+1);//copia os valores de num bytes do local apontado pela fonte diretamente para o bloco de memória apontado pelo destino
+        memcpy(name, nome.c_str(),nome.length()+1);
         for (int i = 0 ; i < nome.length() ; i++) {
             aux = name[i];
             if(aux >= 65 && aux <=90){//letra maiuscula
